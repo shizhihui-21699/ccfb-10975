@@ -1,0 +1,25 @@
+{
+  "name": "oauth-authorization-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "OAuth 2.0 authorization server with mandatory PKCE, DPoP, and rotating refresh tokens",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node src/server.ts",
+    "dev": "node --watch src/server.ts",
+    "test": "node --test 'tests/**/*.test.ts'",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "jose": "^6.2.17"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.6",
+    "typescript": "5.9"
+  }
+}

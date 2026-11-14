@@ -16,3 +16,9 @@ node_modules/
 __pycache__/
 .venv/
 venv/
+
+# runtime data (SQLite database, WAL files)
+/data/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
